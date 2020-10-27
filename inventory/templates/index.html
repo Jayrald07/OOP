@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="button-group mt-5 mb-3">
+    <a href="{% url 'displayLaptops' %}" class="btn btn-primary btn-sm" role="button">Laptops</a>
+    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+
+    <a href="{% url 'displayDesktop' %}" class="btn btn-primary btn-sm" role="button">Desktop</a>
+    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+
+    <a href="{% url 'displayMobile' %}" class="btn btn-primary btn-sm" role="button">Mobile</a>
+    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+</div>
+
+<ul class="list-title">
+    <li>ID</li>
+    <li>Price</li>
+    <li>Issue</li>
+    <li>Status</li>
+</ul>
+
+{% for item in items %}
+<ul class="list-content ">
+    <li>{{ item.pk }}</li>
+    <li>{{ item.price }}</li>
+    <li>{{ item.issues }}</li>
+    <li>{{ item.status }}</li>
+</ul>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name='viewport' />
+    <meta content='Jayrald Empino' name="author" />
+    <meta content='oop, django, python' name="keywords" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.min.css '%}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css'%}" />
+    <title>OOP</title>
+</head>
+
+<body>
+    <div class="container-data">
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-dark custom-bg">
+                <a class="navbar-brand" href="#">OOP</a>
+
+                <div class="collapse navbar-collapse" id="navbarsExample02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            {% block body %}
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>
