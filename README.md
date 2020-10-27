@@ -1,5 +1,4 @@
-# OOP
-#### A basic python project - OOP
+# Application of OOP in Python
 
 Clone my repository by running this in terminal/command prompt
 ```
