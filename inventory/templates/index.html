@@ -3,13 +3,13 @@
 
 <div class="button-group mt-5 mb-3">
     <a href="{% url 'displayLaptops' %}" class="btn btn-primary btn-sm" role="button">Laptops</a>
-    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+    <a href="{% url 'add_laptop' %}" class="btn btn-success btn-sm" role="button">+</a>
 
     <a href="{% url 'displayDesktop' %}" class="btn btn-primary btn-sm" role="button">Desktop</a>
-    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+    <a href="{% url 'add_desktop' %}" class="btn btn-success btn-sm" role="button">+</a>
 
     <a href="{% url 'displayMobile' %}" class="btn btn-primary btn-sm" role="button">Mobile</a>
-    <a href="#" class="btn btn-success btn-sm" role="button">+</a>
+    <a href="{% url 'add_mobile' %}" class="btn btn-success btn-sm" role="button">+</a>
 </div>
 
 <ul class="list-title">

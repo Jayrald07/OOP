@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+    <div class="container mt-4">
+        <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+
+            <div class="form-group form-group-sm">
+                <label for="id_{{field.name}}" class="btn-block">{{field.label}}</label>
+                {{ field }}
+            </div>
+
+            {% endfor %}
+            <button type="submit" name="button" class="btn btn-sm btn-primary">Add Device</button>
+        </form>
+    </div>
+
+{% endblock %}
